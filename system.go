@@ -95,6 +95,14 @@ func (u *UserAgent) evalOS(ua string) bool {
 		case strings.Contains(ua, "cfnetwork") && strings.Contains(ua, "darwin"):
 			u.evalMacintosh(ua)
 
+		case strings.Contains(ua, "applecoremedia") && strings.Contains(ua, "apple tv"):
+			u.OS.Platform = PlatformAppleTV
+			u.OS.Name = OSAppleTV
+
+		case strings.Contains(ua, "roku/dvp"):
+			u.OS.Platform = PlatformRokuTV
+			u.OS.Name = OSRokuOS
+
 		default:
 			u.OS.Platform = PlatformUnknown
 			u.OS.Name = OSUnknown
