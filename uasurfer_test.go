@@ -136,7 +136,7 @@ var testUAVars = []struct {
 		UserAgent{
 			Browser{BrowserIE, Version{11, 0, 0}}, OS{PlatformWindows, OSWindows, Version{6, 3, 0}}, DeviceComputer}},
 
-    {"Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 EdgiOS/44.3.5 Mobile/15E148 Safari/605.1.15",
+	{"Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 EdgiOS/44.3.5 Mobile/15E148 Safari/605.1.15",
 		UserAgent{
 			Browser{BrowserIE, Version{12, 0, 0}}, OS{PlatformiPhone, OSiOS, Version{12, 3, 1}}, DevicePhone}},
 
@@ -340,7 +340,7 @@ var testUAVars = []struct {
 
 	{"Roku/DVP-5.2 (025.02E03197A)", // Roku
 		UserAgent{
-			Browser{BrowserUnknown, Version{0, 0, 0}}, OS{PlatformUnknown, OSUnknown, Version{0, 0, 0}}, DeviceTV}},
+			Browser{BrowserUnknown, Version{0, 0, 0}}, OS{PlatformRokuTV, OSRokuOS, Version{0, 0, 0}}, DeviceTV}},
 
 	{"mozilla/5.0 (smart-tv; linux; tizen 2.3) applewebkit/538.1 (khtml, like gecko) samsungbrowser/1.0 tv safari/538.1", // Samsung SmartTV
 		UserAgent{
